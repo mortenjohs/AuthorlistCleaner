@@ -1,4 +1,7 @@
-Setup
+# AuthorlistCleaner
+
+**AuthorlistCleaner** is a tool to help writers of scientific articles to easily manipulate long lists of authors and institutions. Change order and regenerate numbers and order of institutions involved.
+
 =====
 Install the gems needed for the version you want to use.
 
