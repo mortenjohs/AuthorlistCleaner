@@ -1,16 +1,16 @@
 # AuthorlistCleaner
 
-**AuthorlistCleaner** is a tool to help writers of scientific articles to easily manipulate long lists of authors and institutions. Change order and regenerate numbers and order of institutions involved.
+**AuthorlistCleaner** is a tool to help writers of scientific articles, for some reason forced not to use LaTeX, to easily manipulate long lists of authors and institutions. Change order and regenerate numbers and order of institutions involved.
 
 =====
 Install the gems needed for the version you want to use.
 
-For the web based version:
+For the web based version you need the sinatra web framework and the slim template language (https://github.com/stonean/slim):
 
     gem install 'sinatra'
     gem install 'slim'
 
-For the clipboard version:
+For the clipboard version you need janelis clipboard tool (https://github.com/janlelis/clipboard) and (optionally) launchy (https://github.com/copiousfreetime/launchy):
 
     gem install 'clipboard'
     gem install 'launchy'
