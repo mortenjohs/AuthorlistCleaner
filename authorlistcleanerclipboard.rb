@@ -14,7 +14,6 @@
 # Feel free to do whatever you want with this little script on your own risk etc. It is just a quick hack, so there's 
 # not any error control or flexibility in input/output format.
 require 'clipboard'
-require 'launchy'
 require 'tempfile'
 require './authorlistcleanercore.rb'
 # clean things coming in 
@@ -25,6 +24,7 @@ out_file.write(html_string)
 out_file.flush
 filepath = "file:///#{out_file.path}"
 begin
+  require 'launchy'
   Launchy.open(filepath)
 rescue Exception=>e
   puts "Launchy not installed...\n"+"Here's the html:\n" + html_string
