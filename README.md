@@ -21,10 +21,11 @@ For the web based version:
 
 Point your browser to http://localhost:4567, paste your list of authors and instititions there and click Clean.
 
-For the clibpoard version:
+For the clibpoard version, copy your list of authors and institutions to the clipboard and then:
 
-    Copy your list of authors and institutions to the clipboard
     ruby authorlistcleanerclipboard.rb
+
+This will generate the necessary html to paste back in your editor.
 
 TODO
 ====
