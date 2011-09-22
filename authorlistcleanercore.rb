@@ -10,7 +10,7 @@ class Author
 end
 
 def clean all_text
-  # remove double commas... (Should this be there?)
+  # remove double commas, as this is a common, and difficult to spot, error in author lists...
   all_text.gsub!(',,', ',')
   # find first [ and add a symbol to be able to split at it.
   all_text.sub!('[', '#[')
