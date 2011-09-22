@@ -7,6 +7,7 @@ For now authorlists have to follow the following format:
     Morten Ervik1, Dirk Gently2,3, Ford Prefect3,4
     [1] IARC; [2] Holistic Detective Agency; [3] DNA; [4] The Guide
 
+Setup
 =====
 Install the gems needed for the version you want to use.
 
