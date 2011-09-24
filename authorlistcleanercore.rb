@@ -28,7 +28,7 @@ def clean all_text
   institutions = Hash.new
   # fill the map of institutions
   institutions_string.each_line do |line|
-    line=~/\[([0-9]+)\] (.*)$/
+    line=~/\[([0-9]+)\]\s*(.*)$/
     institutions[$1.to_i]=$2.strip unless $1==nil
   end
   # generate list of authors and affiliations
