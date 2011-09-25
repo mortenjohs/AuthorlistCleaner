@@ -5,7 +5,7 @@
 # 
 # Usage: Copy your authorlist to the webapp, click clean.
 #
-# Requirements: Ruby (tested on 1.9.2) and the 'sinatra' and 'slim' gems.
+# Requirements: Ruby (tested on 1.9.2) and the 'sinatra' and 'slim' gems - optionally also the lauchy gem.
 #
 # Format: Autorlist has to follow a standard format, i.e. 
 #   Morten Ervik1, Dirk Gently2,3, Ford Prefect3,4
@@ -23,4 +23,13 @@ end
 
 post '/' do
   clean params[:text]
+end
+
+url_string = "http://localhost:4567"
+
+begin
+  require 'launchy'
+  Launchy.open(url_string)
+rescue Exception=>e
+  puts "Launchy not installed...\n"+"Here's the URL:\n" + url_string
 end
