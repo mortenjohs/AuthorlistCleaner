@@ -57,6 +57,7 @@ def clean all_text
       end
       indexes.push index
     end
+    indexes.sort!
     author.institution_numbers = indexes
     # create string of indexes
     index_string = indexes[1,indexes.length-1].inject(indexes[0].to_s){|result, element| result+","+element.to_s}
