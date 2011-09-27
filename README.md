@@ -21,6 +21,8 @@ For the clipboard version you need janelis clipboard tool ( https://github.com/j
     gem install 'clipboard'
     gem install 'launchy'
 
+For the Word for Windows version you don't need any gems, just Word for Windows (not Starter Edition as that does not support automation).
+
 Usage
 =====
 
@@ -35,6 +37,12 @@ For the clibpoard version, copy your list of authors and institutions to the cli
     ruby authorlistcleanerclipboard.rb
 
 This will generate the necessary html to paste back in your editor.
+
+For the Word for Windows version just highlight the authors and institutions in word and run:
+
+    ruby authorlistcleanerword.rb
+
+And the lists will update themselves.
 
 TODO
 ====
