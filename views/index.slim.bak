@@ -1,8 +1,5 @@
 title Authorlist cleaner
 h1 Authorlist cleaner
-p Cleans lists like this:
-p Morten Ervik1, Ford Prefect3,4, Dirk Gently2,3
-p [1] IARC; [2] Holistic Detective Agency; [3] DNA; [4] The Guide
 form action="/" method="POST"
   textarea name="text" rows="20" cols="80"
   br
