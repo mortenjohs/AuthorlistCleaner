@@ -50,4 +50,4 @@ User defined regexps
 
 Copyright
 =========
-(c) 2011 Morten Ervik, released under the BSD license
+(c) 2011-2013 Morten Ervik, released under the BSD license

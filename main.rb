@@ -17,7 +17,7 @@ require 'sinatra'
 require 'slim'
 require './authorlistcleanercore.rb'
 
-port_number = 8080
+port_number = 4567
 set :port, port_number
 
 get '/' do
