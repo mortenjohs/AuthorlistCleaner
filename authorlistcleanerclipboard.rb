@@ -26,7 +26,7 @@ filepath = "file:///#{out_file.path}"
 begin
   require 'launchy'
   Launchy.open(filepath)
-rescue Exception=>e
+rescue LoadError => e
   puts "Launchy not installed...\n"+"Here's the html:\n" + html_string
   puts "And here's the temp file:" + out_file.path
   sleep(1000)

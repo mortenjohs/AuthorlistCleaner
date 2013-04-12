@@ -17,6 +17,9 @@ require 'sinatra'
 require 'slim'
 require './authorlistcleanercore.rb'
 
+port_number = 8080
+set :port, port_number
+
 get '/' do
   slim :index
 end
@@ -25,11 +28,11 @@ post '/' do
   clean params[:text]
 end
 
-url_string = "http://localhost:4567"
+url_string = "http://localhost:#{port_number}"
 
 begin
   require 'launchy'
   Launchy.open(url_string)
-rescue Exception=>e
+rescue LoadError => e
   puts "Launchy not installed...\n"+"Here's the URL:\n" + url_string
 end
